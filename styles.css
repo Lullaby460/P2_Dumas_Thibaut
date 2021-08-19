@@ -1,3 +1,7 @@
-h1 {
-    color: red;
+. {
+    font-family: 
+}
+@font-face {
+    font-family: 'Raleway'
+    src: url('Raleway-VariableFont_wght.ttf')
 }
