@@ -1,18 +1,19 @@
 html {
     font-family: 'Raleway';
-    margin: 50px;
     line-height : 5px;
 }
 @font-face {
     font-family: 'Raleway';
     src: url('ressources/Raleway-VariableFont_wght.ttf');
 }
-section, .presentation div, .popular div {
+section, .presentation div, .popular div, .activites img {
     border-radius: 30px;
+}
+body {
+    margin: 0;
 }
 footer {
     justify-content: space-around;
-    margin: -60px;
     padding: 70px;
     text-align: justify;
     line-height: 30px;
@@ -49,11 +50,11 @@ article {
 .presentation {
     margin-right: 40px;
     flex-direction: column;
-    width: 880px;
+    width: 75%;
     height: 625px;
 }
 .popular {
-    width: 420px;
+    width: 25%;
 }
 .popular div {
     justify-content: center;
@@ -65,4 +66,7 @@ article {
 }
 .presentation h4, .presentation p{
     margin-left: 15px;
+}
+header, section, .essai {
+    padding: 50px;
 }
