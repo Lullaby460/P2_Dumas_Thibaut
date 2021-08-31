@@ -12,14 +12,21 @@
             <img src="ressources/img/logo/Reservia.svg" title="logo" />
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
+            <div class=recherche>
+                <i class="fas fa-map-marker-alt" style="font-size: 18px; padding: 16px;"></i>
+                <form method="post" action="traitement.php">
+                        <input type="text" name="lieux" id="lieux" placeholder="Marseille, France" maxlength="10" style="height: 45px; width: 235px; border: 0px;" />
+                    <input type="submit" value="Rechercher" style="border-radius: 0px 15px 15px 0px; background-color:#0065FC; height: 50px; width: 132px; border-width: 0px; color: white;" />
+                </form>
+            </div>
         </header>
        <div class="essai" style="display: flex; justify-content: center;">
        <section class="presentation" style="display: flex;">
             <h1>Hébergements à Marseille</h1>
                 <br />
-            <article style="display: flex; justify-content: center; line-height: 3px;">
+            <article style="display: flex; line-height: 3px;">
                 <div>
-                    <img class="host" src="ressources/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="250px" height="125px" />
+                    <img class="host" src="ressources/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" />
                     <h4>Auberge la Cannebière</h4>
                     <p>Nuit à partir de <b>25€</b></p>
                     <span style="color:#0065FC; font-size: 15px;">
@@ -33,9 +40,23 @@
                     </span>
                 </div>
                 <div>
-                    <img class="host" src="ressources/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="250px" height="125px" />
+                    <img class="host" src="ressources/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" />
                     <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <p>Nuit à partir de <b>52€</b></p>
+                    <span style="color:#0065FC; font-size: 15px;">
+                        <i class="fas fa-star" style="padding-left: 15px;"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span style="color:#F2F2F2; font-size: 15px;">
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <div style="margin-right: 0px;">
+                    <img class="host" src="ressources/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" />
+                    <h4>Auberge la Cannebière</h4>
+                    <p>Nuit à partir de <b>76€</b></p>
                     <span style="color:#0065FC; font-size: 15px;">
                         <i class="fas fa-star" style="padding-left: 15px;"></i>
                         <i class="fas fa-star"></i>
@@ -47,9 +68,9 @@
                     </span>
                 </div>
                 <div>
-                    <img class="host" src="ressources/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" width="250px" height="125px" />
+                    <img class="host" src="ressources/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" />
                     <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <p>Nuit à partir de <b>46€</b></p>
                     <span style="color:#0065FC; font-size: 15px;">
                         <i class="fas fa-star" style="padding-left: 15px;"></i>
                         <i class="fas fa-star"></i>
@@ -61,9 +82,9 @@
                     </span>
                 </div>
                 <div>
-                    <img class="host" src="ressources/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width="250px" height="125px" />
+                    <img class="host" src="ressources/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" />
                     <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <p>Nuit à partir de <b>23€</b></p>
                     <span style="color:#0065FC; font-size: 15px;">
                         <i class="fas fa-star" style="padding-left: 15px;"></i>
                         <i class="fas fa-star"></i>
@@ -74,24 +95,10 @@
                         <i class="fas fa-star"></i>
                     </span>
                 </div>
-                <div>
-                    <img class="host" src="ressources/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width="250px" height="125px" />
+                <div style="margin-right: 0px;">
+                    <img class="host" src="ressources/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" />
                     <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <b>25€</b></p>
-                    <span style="color:#0065FC; font-size: 15px;">
-                        <i class="fas fa-star" style="padding-left: 15px;"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </span>
-                    <span style="color:#F2F2F2; font-size: 15px;">
-                        <i class="fas fa-star"></i>
-                    </span>
-                </div>
-                <div>
-                    <img class="host" src="ressources/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width="250px" height="125px" />
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <p>Nuit à partir de <b>96€</b></p>
                     <span style="color:#0065FC; font-size: 15px;">
                         <i class="fas fa-star" style="padding-left: 15px;"></i>
                         <i class="fas fa-star"></i>
@@ -155,15 +162,37 @@
         </section>
     </div>
            
-       <section class="activites" style="display: flex; flex-wrap: wrap;">
-        <h1>Activités à Marseille</h1>
-        <article>
-            <img class="host" src="ressources/img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" width="300px" height="390px" />
-            <img class="host" src="ressources/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" width="300px" height="180px"/>
-            <img class="host" src="ressources/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" />
-            <img class="host" src="ressources/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" />
-            <img class="host" src="ressources/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" />
-            <img class="host" src="ressources/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" />
+       <section class="activites" style="display: flex; flex-direction: column;">
+        <h1>Activités à Marseille </h1>
+        <article style="display: flex;">
+            <div style="box-shadow: 0 0 1em #F2F2F2;">
+                <img class="host" src="ressources/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" height="390px"/>
+                <p><b>Vieux port</b></p>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <div style="width: 100%; margin: 0px; box-shadow: 0 0 1em #F2F2F2;">
+                    <img class="host" src="ressources/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" height="180px" />
+                    <p><b>Fort de Pornègues</b></p>
+                </div>
+                <div style="width: 100%; margin: 40px 0 0 0; box-shadow: 0 0 1em #F2F2F2;">
+                    <img class="host" src="ressources/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" height="110px"/>
+                    <p><b>Iles de Frioul</b></p>
+                </div>
+            </div>
+            <div style="box-shadow: 0 0 1em #F2F2F2;">
+                <img class="host" src="ressources/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" height="390px"/>
+                <p><b>Parc National des Calanques</b></p>
+            </div>
+            <div style="display: flex; flex-direction: column; margin: 0px;">
+                <div style="width: 100%; margin: 0px; box-shadow: 0 0 1em #F2F2F2;">
+                    <img class="host" src="ressources/img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" height="140px"/>
+                    <p><b>Notre-Dame-de-la-Garde</b></p>
+                </div>
+                <div style="width: 100%; margin: 40px 0 0 0; box-shadow: 0 0 1em #F2F2F2;">
+                    <img class="host" src="ressources/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" height="150px"/>
+                    <p><b>Longchamp</b></p>
+                </div>
+            </div>
         </article>
        </section>
        <footer style="display: flex;">
