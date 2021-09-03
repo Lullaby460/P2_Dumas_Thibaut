@@ -16,11 +16,11 @@
 
 
             <div style="display: flex; margin-bottom: 40px; justify-content: space-between;">
-                <img src="ressources/img/logo/Reservia.svg" title="logo" />
-                <div style="display: flex; justify-content: space-between; width: 30%;">
-                    <a class="accueil" href="#hebergement">Hébergements</a>
-                    <a class="accueil" href="#activites">Activités</a>
-                    <a class="accueil" href="">S'inscrire</a>
+                <img class="logo" src="ressources/img/logo/Reservia.svg" title="logo" />
+                <div class="accueil">
+                    <a  href="#hebergement">Hébergements</a>
+                    <a  href="#activites">Activités</a>
+                    <a  href="">S'inscrire</a>
                 </div>
             </div>
 
@@ -32,7 +32,7 @@
 
 
             <div class=recherche>
-                <i class="fas fa-map-marker-alt" style="font-size: 18px; padding: 16px;"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 <form method="post" action="traitement.php">
                         <input type="text" class="textfield" name="lieux" id="lieux" placeholder="Marseille, France" maxlength="10" />
                     <input type="submit" class="subfield" value="Rechercher" />
@@ -43,13 +43,13 @@
             <!-- Filtres -->
 
 
-            <div class="filtres" style="display: flex; height: 50px; flex-direction: row; font-weight: bold;">
+            <div class="filtres">
 
-                <div style="margin-right: 5px; border: 0px;">
+                <div class="filtalone">
                     <p>Filtres</p>
                 </div>
 
-                <div>
+                <div class="filtrebutton">
                     <button class="button button--isi button--text-thick button--text-upper button--size-s" style="display: flex;">
                         <div>
                             <i class="fas fa-money-bill-wave" style="color:#0065FC;"></i>
@@ -58,7 +58,7 @@
                     </button>
                 </div>
 
-                <div>
+                <div class="filtrebutton">
                     <button class="button button--isi button--text-thick button--text-upper button--size-s" style="display: flex;">
                         <div>
                             <i class="fas fa-child" style="color:#0065FC;"></i>
@@ -67,7 +67,7 @@
                     </button>
                 </div>
 
-                <div>
+                <div class="filtrebutton">
                     <button class="button button--isi button--text-thick button--text-upper button--size-s" style="display: flex;">
                         <div>
                             <i class="fas fa-heart" style="color:#0065FC;"></i>
@@ -76,7 +76,7 @@
                     </button>
                 </div>
 
-                <div>
+                <div class="filtrebutton">
                     <button class="button button--isi button--text-thick button--text-upper button--size-s" style="display: flex;">
                         <div>
                             <i class="fas fa-dog" style="color:#0065FC;"></i>
@@ -90,9 +90,9 @@
             <!-- Résultats de recherche -->
 
 
-            <div style="display: flex; align-items: center; margin-top: 25px;">
-                <div style="width: 24px; height: 24px; border-radius: 50%; border: 2px solid #F2F2F2; margin-right: 10px;">
-                    <i class="fas fa-info" style="font-size: 0.8em; color:#0065FC; padding: 6px 0 0 10px;"></i>
+            <div class="result">
+                <div class="info">
+                    <i class="fas fa-info"></i>
                 </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
@@ -104,7 +104,7 @@
 
        <div class="main" style="display: flex; justify-content: center;">
        <section id="hebergement" class="presentation" style="display: flex;">
-            <h1 style="margin-bottom: auto;">Hébergements à Marseille</h1>
+            <h1>Hébergements à Marseille</h1>
                 
             <article style="display: flex; line-height: 3px;">
                 <a class="links" href="">
@@ -205,14 +205,14 @@
        <!-- Populaires -->
 
 
-       <section class="popular" style="padding-left: 25px;">
-            <div class="pop" style="padding-top: 40px; padding-bottom: 0px; height: 30px; align-items: center; justify-content: space-between; background-color: #F2F2F2; display: flex; box-shadow: 0 0 0; flex-direction: row;">
+       <section style="background-color: #F2F2F2;">
+            <div class="pop">
                 <h1>Les plus populaires</h1>
-                <i class="fas fa-chart-line" style="font-size: 1.1em;"></i>
+                <i class="fas fa-chart-line"></i>
             </div>
-
+        <article class="popular">
             <a class="links" href="">
-                <div class="link" style="display: flex; justify-content: space-between; flex-direction: column; flex-wrap: wrap;">
+                <div class="link">
                     <img class="host" src="ressources/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" width="140px" height="144px" />
                     <p>
                         <b>Hôtel Le soleil du matin</b><br />
@@ -229,7 +229,7 @@
             </a>
 
             <a class="links" href="">
-                <div class="link" style="display: flex; justify-content: space-between; flex-direction: column; flex-wrap: wrap;">
+                <div class="link">
                     <img class="host" src="ressources/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" width="140px" height="144px" />
                     <p>
                         <b>Au coeur de l'eau Chambres d'hôtes</b><br />
@@ -246,7 +246,7 @@
             </a>
 
             <a class="links" href="">
-                <div class="link" style="display: flex; justify-content: space-between; flex-direction: column; flex-wrap: wrap;">
+                <div class="link">
                     <img class="host" src="ressources/img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" width="140px" height="144px" />
                     <p>
                         <b>Hôtel Tout bleu et blanc</b><br />
@@ -261,6 +261,7 @@
                     </span>
                 </div>
             </a>
+        </article>
         </section>
         </div>
 
@@ -274,16 +275,16 @@
             
             <div class="link">
                 <a class="links" href="">
-                    <img class="host" src="ressources/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" height="390px"/>
+                    <img class="host" src="ressources/img/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" height="390px"/>
                     <p><b>Vieux port</b></p>
                 </a>
             </div>
             
-            <div style="display: flex; flex-direction: column;">
+            <div class="double" style="display: flex; flex-direction: column;">
                 
                 <div class="link" style="margin: 0px;">
                     <a class="links" href="">
-                        <img class="host" src="ressources/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" height="180px" />
+                        <img class="host" src="ressources/img/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" height="180px" />
                         <p><b>Fort de Pornègues</b></p>
                     </a>
                 </div>
@@ -291,7 +292,7 @@
                 
                 <div class="link" style="margin: 40px 0 0 0;">
                     <a class="links" href="">
-                        <img class="host" src="ressources/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" height="110px"/>
+                        <img class="host" src="ressources/img/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" height="110px"/>
                         <p><b>Iles de Frioul</b></p>
                     </a>
                 </div>
@@ -300,12 +301,12 @@
             
             <div class="link">
                 <a class="links" href="">
-                    <img class="host" src="ressources/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" height="390px"/>
+                    <img class="host" src="ressources/img/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" height="390px"/>
                     <p><b>Parc National des Calanques</b></p>
                 </a>
             </div>
             
-            <div style="display: flex; flex-direction: column; margin: 0px;">
+            <div class="double" style="display: flex; flex-direction: column; margin: 0px;">
 
                 <div class="link" style="margin: 0px;">
                     <a class="links" href="">
@@ -316,7 +317,7 @@
                             
                 <div class="link" style="margin: 40px 0 0 0;">
                     <a class="links" href="">
-                        <img class="host" src="ressources/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" height="150px"/>
+                        <img class="host" src="ressources/img/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" height="150px"/>
                         <p><b>Longchamp</b></p>
                     </a>
                 </div> 
@@ -328,7 +329,7 @@
        <!-- FOOTER -->
 
 
-       <footer style="display: flex; align-items: center;">
+       <footer>
            <div style="padding-left: 0px;">
                <h4>A propos</h4>
                Fonctionnement du site <br />
