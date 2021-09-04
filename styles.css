@@ -214,6 +214,17 @@ img {
     font-size: 18px; 
     padding: 16px;
 }
+.hdp {
+    display: flex; 
+    margin-bottom: 40px; 
+    justify-content: space-between;
+}
+.hdportable{
+    display: none;
+}
+.menuportable{
+    display: none;
+}
 
 
 
@@ -222,7 +233,6 @@ img {
 
 
 /* button styles */
-
 .button--isi {	
 	overflow: hidden;
 }
@@ -279,6 +289,14 @@ button div {
     position: inherit;
     right: 6px;
     bottom: 2px;
+}
+.buttonfield{
+    border-radius: 20px;
+    background-color: #0065FC;
+    color: white;
+    display: none;
+    height: 6em;
+    width: 6em;
 }
 
 
@@ -391,6 +409,7 @@ button div {
     }
 
 
+    /* Bouton d'info */
     .info i{
         font-size: 2em; 
         color:#0065FC; 
@@ -407,6 +426,7 @@ button div {
     }
 
 
+    /* Barre de filtres */
     .filtalone{
         width: 100%;
     }
@@ -436,20 +456,78 @@ button div {
     }
 
 
+
+    /* Barre de recherche */
     .recherche{
         width: 100%;
-        height: 200px;
+        height: 80px;
+        max-height: 100px;
     }
     .recherche i{
-        font-size: 1.5em;
+        font-size: 2em;
         position: relative;
-        bottom: 03px;
+        top: 8px;
     }
     .textfield{
-        width: 25.5em;
+        width: 24.8em;
         font-size: 2em;
-        height: 80%;
-        top: 05px;
+        height: 90%;
+        top: 1px;
         position: relative;
+    }
+    .subfield{
+        display: none;
+    }
+    .buttonfield{
+        display: initial;
+    }
+    .buttonfield i{
+        top: 0px;
+    }
+
+
+    /* Haut de page */
+    .logo{
+        width: 50%;
+    }
+    .entete{
+        font-size: 2em;
+    }
+    .h2tete{
+        font-size: 4em;
+    }
+    .hdp{
+        display: none;
+    }
+    .hdportable{
+        display: flex; 
+        margin-bottom: 40px; 
+        justify-content: space-between;
+    }
+    .hdportable a{
+        font-size: 2.5em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #0065FC;
+        padding: 2.5em 0 0 0;
+    }
+    .menuportable{
+        display: flex;
+        justify-content: space-around;
+        margin: 4em 0 6em 0;   
+    }
+    .menuportable a{
+        font-size: 2em;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        border-bottom: 0.3em solid #F2F2F2;
+        padding: 1em;
+        width: 50%;
+        text-align: center;
+    }
+    .menuportable a:active{
+        color: #0065FC;
+        border-color: #0065FC;
     }
 }
