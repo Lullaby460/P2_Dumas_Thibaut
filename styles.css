@@ -535,7 +535,7 @@ button div {
 
 
 
-@media all and (max-device-width: 1024px){
+@media (min-device-width: 700px) and (max-device-width: 1024px){
     .main{
         flex-direction: column;
     }
