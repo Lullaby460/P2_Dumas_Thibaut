@@ -531,3 +531,45 @@ button div {
         border-color: #0065FC;
     }
 }
+
+
+
+
+@media all and (max-device-width: 1024px){
+    .main{
+        flex-direction: column;
+    }
+    .presentation{
+        margin: 0 0 40px 0;
+    }
+    .popular{
+        display: flex;
+        flex-direction: row;
+    }
+    .activites div{
+        margin: 0 0 40px 0;
+        width: 48%;
+    }
+    .double .link{
+        width: 100%;
+    }
+    .double{
+        margin: 0 0 40px 40px;
+    }
+    .activites article{
+        justify-content: space-between;
+    }
+    .filtres{
+        margin-bottom: 6em;
+        flex-wrap: wrap;
+    }
+    .filtrebutton{
+        margin-bottom: 1em;
+    }
+    .button div{
+        bottom: 0;
+    }
+    footer{
+        align-items: unset;
+    }
+}
