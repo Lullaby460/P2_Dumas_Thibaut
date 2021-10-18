@@ -1,0 +1,123 @@
+@media all and (max-width: 600px){
+    html{
+        line-height: initial;
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    .presentation, .activites{
+        grid-template-columns: 1fr;
+    }
+    .logo{
+        height: auto;
+    }
+    .activites, .presentation{
+        grid-template-rows: auto 25rem 25rem 25rem 25rem 25rem 25rem;
+    }
+    .popsection{
+        grid-template-rows: auto 25rem 25rem 25rem;
+    }
+    .activititre{
+        font-size: 2.5rem;
+    }
+    .hostimg{
+        height: 50%;
+    }
+
+
+    /* Bouton d'info */
+    .info i{
+        font-size: 2em; 
+        color:#0065FC; 
+        padding: 0;
+        padding: 0.3em 0.3em 0 0.55em;
+    }
+    .result p{
+        font-size: 2.1em;
+        word-break: inherit;
+    }
+    .info{
+        width: 3em; 
+        height: 3em; 
+    }
+
+
+    /* Barre de filtres */
+    .filtalone{
+        width: 100%;
+        font-size: 2.5em;
+    }
+    .filtres{
+        flex-wrap: wrap;
+        height: auto;     
+    }
+    .filtres i{
+        font-size: 2.2em;
+    }
+    .filtres span{
+        font-size: 2.2em;
+        width: auto;
+        height: 2em;
+        line-height: 1.5em;
+    }
+    .button div{
+        width: 5.5em;
+        height: 5.5em;
+    }
+    .filtres div{
+        border-radius: 4em;
+    }
+    .filtrebutton{
+        margin-bottom: 1em;
+    }
+
+
+
+    /* Barre de recherche */
+    .recherche{
+        display: flex;
+        width: 100%;
+        height: 5rem;
+    }
+    .subfield{
+        display: none;
+    }
+    .loupe{
+        display: block;
+    }
+    .textfield{
+        width: 100%;
+    }
+    .search-button{
+        padding: 0 2.5rem;
+    }
+
+
+    /* Haut de page */
+    .logo{
+        width: 30%;
+    }
+    .inscription{
+        order: 0;
+    }
+    .hdp{
+        flex-wrap: wrap;
+        font-size: 2rem;
+    }
+    .accueilbox{
+        justify-content: space-around;
+        width: 100%;
+    }
+    .h2tete{
+        font-size: 2.5rem;
+    }
+    .mainarticle{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .loupe{
+        display: none !important;
+    }    
+}
