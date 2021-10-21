@@ -10,14 +10,10 @@ body {
     src: url('ressources/Raleway-VariableFont_wght.ttf');
 }
 footer {
-    justify-content:space-between;
+    justify-content:space-around;
     padding: 70px;
     text-align: justify;
     line-height: 2rem; 
-}
-footer div {
-    width: 480px;
-    padding-left: 10px;
 }
 .presentation, footer {
     background-color: #F2F2F2;
@@ -219,6 +215,21 @@ header {
     color: black;
     font-weight: bold;
 }
+.fas {
+    color:#0065FC;
+}
+.span-star {
+    font-size: 0.7em;
+}
+.loupe {
+    color: #fff
+}
+.fa-chart-line {
+    color: #000000
+}
+.empty {
+    color: #F2F2F2;
+}
 
 
 .search-icon {
@@ -238,6 +249,7 @@ header {
     font-size: 1rem;
     cursor: pointer
 }
+
 
 
 
@@ -434,7 +446,6 @@ span {
         padding: 3rem;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size: 2.1em;
         line-height: 2em;
     }
     .activites{
